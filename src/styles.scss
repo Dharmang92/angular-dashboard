@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+
+@import url("https://fonts.googleapis.com/css?family=Material+Icons+Outlined");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Inter", SansSerif, serif;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}

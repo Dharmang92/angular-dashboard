@@ -1,0 +1,45 @@
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  //background-image: url("https://source.unsplash.com/random/1920x1080");
+  background-image: url("https://images.unsplash.com/photo-1616484471038-abdf6afa625a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixlib=rb-1.2.1&q=80&w=1920");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.top {
+  //background-color: aquamarine;
+  text-align: center;
+  padding: 30px 0;
+
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #f5f5f5;
+    text-shadow: 0 1px 7px rgba(black, 0.1);
+  }
+
+  h2 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 0 1px 4px rgba(black, 0.1);
+  }
+}
+
+.content {
+  //background-color: orange;
+  flex-grow: 1; //content is the child of app-wrapper which is a flexbox so we can give it flex-gow 1 to let it take the remaining space
+  min-height: 0;
+}
+
+.bottom {
+  //background-color: lightblue;
+  display: flex;
+
+  app-tabs {
+    margin: auto;
+  }
+}

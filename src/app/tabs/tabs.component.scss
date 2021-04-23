@@ -1,0 +1,40 @@
+.tabs {
+  display: flex;
+  gap: 14px;
+  padding: 10px;
+  background-color: rgba(white, 0.25);
+  backdrop-filter: blur(3px);
+  border-radius: 12px;
+  margin: 12px;
+  margin-top: 50px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.tab-tile {
+  padding: 18px;
+  cursor: pointer;
+  display: flex;
+  user-select: none;
+  background: linear-gradient(45deg, #f8b5a5, #e2d2fd);
+  border-radius: 10px;
+  transition: all 0.1s linear;
+  opacity: 0.85;
+
+  i {
+    color: #222;
+  }
+}
+
+.tab-tile:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.tab.selected .tab-tile {
+  border-radius: 50%;
+  position: relative;
+  transform: translateY(-18px) scale(1.1);
+  opacity: 1;
+}

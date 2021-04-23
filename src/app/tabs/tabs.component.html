@@ -1,0 +1,8 @@
+<div class="tabs">
+  <!--if [] then input expression i.e 'bookmarks' string but here we are passing property so using []-->
+  <a class="tab" *ngFor="let l of tabList" [routerLink]="l" routerLinkActive="selected">
+    <div class="tab-tile">
+      <i class="material-icons-outlined">{{l == 'todos' ? 'check' : l}}</i>
+    </div>
+  </a>
+</div>
